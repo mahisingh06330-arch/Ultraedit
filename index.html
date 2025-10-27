@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            overflow-x: hidden;
+        }
+
+        nav {
+            box-sizing: border-box;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .right ul {
+            display: flex;
+            gap: 33px;
+            cursor: pointer;
+        }
+
+        ul li {
+            list-style: none;
+            padding-top: 14px;
+        }
+
+        .logo {
+            margin-left: -37px;
+        }
+
+        li b {
+            border: 2.5px solid black;
+            padding: 8px 16px;
+            border-radius: 4px;
+        }
+
+        .arrow {
+            font-size: 10px;
+        }
+
+        .lang {
+            padding-top: 28px;
+        }
+
+        main {
+            height: 300px;
+            width: 100vw;
+            text-align: center;
+        }
+
+        .edit {
+            margin-top: 65px;
+            font-size: 48px;
+        }
+
+        .text {
+            font-size: 24px;
+            margin-right: 102px;
+            margin-left: 140px;
+            padding: 40px;
+            margin-bottom: 6px;
+        }
+
+        .button {
+            border: 1px solid transparent;
+            background-color: #0DC1D5;
+            border-radius: 6px;
+            color: white;
+            padding: 12px;
+            font-size: 15px;
+        }
+        .button:hover{
+            cursor:pointer;
+            background-color: #10aec0;
+        }
+
+        .load {
+            font-size: 26px;
+            margin-right: 15px;
+            margin-left: 30px;
+        }
+
+        .UE {
+            height: 66px;
+            margin-left: 153px;
+            margin-top:-10px;
+        }
+
+        .main {
+            display: flex;
+            align-items: center;
+        }
+
+        footer {
+            height: 400px;
+            width: 100vw;
+            margin-top: 100px;
+            display: flex;
+        }
+
+        .box {
+            display: flex;
+            height: 400px;
+            width: 300px;
+            color: black;
+            margin-right: 22px;
+            margin-left: 40px;
+        }
+
+        .box ul li h4 {
+            margin-bottom: 20px;
+            font-size: 15px;
+        }
+
+        .box ul li {
+            margin-top: -10px;
+            font-size: 13px;
+            padding: 8px;
+        }
+
+        input {
+            border: 1px solid gray;
+            border-radius: 3px;
+            margin-top: 30px;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+
+        .button2 {
+            /* border: 1px solid transparent; */
+            border-style: hidden;
+            background-color: #0DC1D5;
+            border-radius: 6px;
+            color: white;
+            padding: 12px;
+            font-size: 15px;
+        }
+
+        .box5 ul li .button {
+            padding-left: 50px;
+        }
+
+        .foot {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .copy {
+            margin-top: 5px;
+            font-size: 13px;
+            margin-bottom: 20px;
+        }
+
+        .icons {
+            font-size: 25px;
+        }
+
+        .middle {
+            height: 900px;
+            width: 100vw;
+            margin-top: 25px;
+            display: grid;
+            grid-template-rows: auto;
+            grid-template-columns: repeat(3, 1fr);
+            align-content: center;
+            justify-content: center;
+        }
+
+        .item {
+            border: 2px solid transparent;
+            background-color: #f9f9f9;
+            max-width: 302px;
+            height: 159px;
+            width: 269px;
+            text-align: center;
+            font-size: 12px;
+            padding: 20px;
+            margin: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .down {
+            border: 1px solid transparent;
+            border-radius: 5px;
+            background-color: #44BD14;
+            color: white;
+            width: 170px;
+            margin-left: 14px;
+            padding: 7px;
+            font-weight: bold;
+        }
+
+        .garbage {
+            margin-top: -13px;
+            font-size: 9px;
+            padding: 10px;
+            width: 224px;
+            border: 1px solid transparent;
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+        }
+
+        .lang {
+            font-size: 20px;
+            margin-top: -18px;
+        }
+
+        .item1 {
+            margin-left: 152px;
+        }
+
+        .item3 {
+            margin-right: 152px;
+        }
+
+        .black {
+            height: 343px;
+            display: flex;
+            width: 100vw;
+            margin-top: 40px;
+            color: white;
+            background-color:#222222;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .d1 {
+            text-align: center;
+            border: 2px solid transparent;
+            height: 300px;
+            width: 453px;
+            margin-top: 328px;
+            margin-left: -35px;
+            margin-right: 153px;
+        }
+
+        .d2 {
+            font-size: 26px;
+            text-align: center;
+            border: 2px solid white;
+            height: 264px;
+            width: 360px;
+            background-color: white;
+            border-radius: 10px;
+            margin-top: 50px;
+        }
+
+        .d2 div {
+            margin-top: 20px;
+        }
+        .sub{
+  color: #00b6d1;
+  margin-bottom:15px;
+        }
+        .d2 div .sign{
+            color:black;
+            font-size:15px;
+        }
+        .d2 div input{
+            margin:0px 59px;
+            border:1px solid #d9d5d5;
+            width:233px;
+            margin-top:5px;
+            height:26px;
+        }
+        .d2 div button{
+            border-style: none;
+            height:42px;
+            width:254px;
+            background-color: #00b6d1;
+            margin-top:20px;
+            color:white;
+            font-weight: bold;
+            font-size:15px;
+            border-radius:5px;
+            margin-left:15px;
+            box-shadow: 20 20 #00b6d1 blur spread;
+            cursor: pointer;
+        }
+        .black2{
+            color:white;
+            height:330px;
+            width:100vw;
+            background-color: #222222;
+        }
+        .exe{
+            padding-top:40px;
+            margin-left:146px;
+            margin-bottom:20px;
+            font-size:24px;
+        }
+        .build{
+            margin-left:146px;
+            font-size:16px;
+            margin-top:10px;
+        }
+        .down:hover{
+            cursor:pointer;
+
+        }
+    </style>
+</head>
+
+<body>
+    <header class="container">
+        <nav>
+            <div><img src="https://www.ultraedit.com/wp-content/uploads/2023/01/Frame-1-2.png" class="logo" aly="logo">
+            </div>
+            <div class="right">
+                <ul>
+                    <li>Products<i class="fa-solid fa-chevron-down arrow"></i></li>
+                    <li>Pricing<i class="fa-solid fa-chevron-down arrow"></i></li>
+                    <li>Resources<i class="fa-solid fa-chevron-down arrow"></i></li>
+                    <li>Our Company<i class="fa-solid fa-chevron-down arrow"></i></li>
+                    <li><b>DOWNLOAD</b></li>
+                    <div class="lang"><i class="fa-solid fa-earth-americas"></i>English</div>
+                    <div><i class="fa-solid fa-magnifying-glass"></i></div>
+                </ul>
+
+            </div>
+        </nav>
+    </header>
+    <main>
+        <p>
+        <div class="edit"> Download <b>UltraEdit</b> for Windows <img
+                src="https://www.ultraedit.com/wp-content/uploads/2022/10/Reviews.png" alt="logo"></div>
+
+        <div class="text">Download and try UltraEdit before you buy it! This download includes the full Windows version
+            of the text editor.</div>
+        </p>
+        <span class="button"><b>DOWNLOAD MAC OR LINUX VERSION</b></span>
+    </main>
+    <div class="main">
+        <img class="UE" src="https://c.clc2l.com/t/u/l/ultraedit-zbx2XS.png">
+        <div><span class="load">Download UltraEdit</span>v2025.1 (released 2025-10-10) | Latest changes</div>
+    </div>
+    <div class="middle">
+        <div class="item item1">
+            <h3 class="lang">English</h3> Includes all languages
+            <div class="down">Download 64-bit</div>SHA256<div class="garbage">
+                489DJN3J50JFK789DKI9FHIE38478FKK394JIF9NEJE394K29DIRU49920DI393</div>
+
+        </div>
+        <div class="item item2">
+            <h3 class="lang">Deutsch</h3> German
+            <div class="down">Download 64-bit</div>SHA256<div class="garbage">
+                489DJN3J50JFK789DKI9FHIE38478FKK394JIF9NEJE394K29DIRU49920DI393</div>
+        </div>
+        <div class="item item3">
+            <h3 class="lang">Italiano</h3> Italian
+            <div class="down">Download 64-bit</div>SHA256<div class="garbage">
+                489DJN3J50JFK789DKI9FHIE38478FKK394JIF9NEJE394K29DIRU49920DI393</div>
+        </div>
+        <div class="item item1">
+            <h3 class="lang">Español</h3> Spanish
+            <div class="down">Download 64-bit</div>SHA256<div class="garbage">
+                489DJN3J50JFK789DKI9FHIE38478FKK394JIF9NEJE394K29DIRU49920DI393</div>
+        </div>
+        <div class="item item5">
+            <h3 class="lang">français</h3> French
+            <div class="down">Download 64-bit</div>SHA256<div class="garbage">
+                489DJN3J50JFK789DKI9FHIE38478FKK394JIF9NEJE394K29DIRU49920DI393</div>
+        </div>
+        <div class="item item3">
+            <h3 class="lang">Português brasileiro</h3> Brazilian Portuguese
+            <div class="down">Download 64-bit</div>SHA256<div class="garbage">
+                489DJN3J50JFK789DKI9FHIE38478FKK394JIF9NEJE394K29DIRU49920DI393</div>
+        </div>
+        <div class="item item1">
+            <h3 class="lang">日本</h3> Japanese
+            <div class="down">Download 64-bit</div>SHA256<div class="garbage">
+                489DJN3J50JFK789DKI9FHIE38478FKK394JIF9NEJE394K29DIRU49920DI393</div>
+        </div>
+        <div class="item item8">
+            <h3 class="lang">한국어</h3> Korean
+            <div class="down">Download 64-bit</div>SHA256<div class="garbage">
+                489DJN3J50JFK789DKI9FHIE38478FKK394JIF9NEJE394K29DIRU49920DI393</div>
+        </div>
+        <div class="item item3">
+            <h3 class="lang">华语</h3> Chinese
+            <div class="down">Download 64-bit</div>SHA256<div class="garbage">
+                489DJN3J50JFK789DKI9FHIE38478FKK394JIF9NEJE394K29DIRU49920DI393</div>
+        </div>
+        <div class="item item1">
+            <h3 class="lang">華語</h3> Traditional Chinese
+            <div class="down">Download 64-bit</div>SHA256<div class="garbage">
+                489DJN3J50JFK789DKI9FHIE38478FKK394JIF9NEJE394K29DIRU49920DI393</div>
+        </div>
+
+    </div>
+
+    <div class="black">
+        <div class="d1">
+            <h2>Join the UltraEdit newsletter</h2>
+            Sign up for our newsletter and receive emails for the latest news, blogs, and special deals on UltraEdit.
+        </div>
+        <div class="d2">
+            <div>
+                <div class="sub"> Subscribe to our emails</div>
+                <label for="sign" class="sign">Enter email address</label>
+                <input type="sign" placeholder="username@gmail.com" name="sign">
+                <button>SIGN UP</button>
+            </div>
+        </div>
+        <div>
+        </div>
+      
+  </div>
+<div class="black2">
+    <div>
+        <div class="exe">EXE or MSI?</div>
+        <div class="build">The EXE builds of our products are the preferred download for most of our users, running Windows 10 and later.</div>
+        <div class="build">We make MSI builds available for bulk or silent deployments (command line, GPO, SCCM, etc.). <span style="color:#0DC1D5">Get the UltraEdit MSI installer.</span></div>
+        <div class="exe">Free trial period</div>
+        <div class="build">This application comes with a free, fully functional 30 day trial period. After the trial period expires, you must<span style="color:#0DC1D5"> purchase a license to</span></div>
+        <div class="build">continue using it.</div>
+    </div>
+</div>
+
+
+    <footer>
+        <div class="box box1">
+            <div>
+                <ul>
+                    <li>
+                        <h4> What’s your language?</h4>
+                    </li>
+                    <li>Code editor (General)</li>
+                    <li>Text editor</li>
+                    <li>Hex/Binary</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Unix shell scripts</li>
+                    <li>PL/SQL</li>
+                    <li>EDI</li>
+                    <li>C++</li>
+                    <li>PHP</li>
+                    <li>XML</li>
+                    <li>Markdown</li>
+                    <li>SAS</li>
+                    <li>Visual Basic (VB)</li>
+                </ul>
+            </div>
+        </div>
+        <div class="box box2">
+            <div>
+                <ul>
+                    <li>
+                        <h4>What do you need to do?</h4>
+                    </li>
+                    <li>Edit large text files</li>
+                    <li>Use secure and compliant software</li>
+                    <li>Work with unique languages and formats</li>
+                    <li>Edit hex and binary files</li>
+                    <li>Reformat XML/JSON files</li>
+                    <li>Massive find and replace operations</li>
+                    <li>Edit via columns/blocks</li>
+                </ul>
+            </div>
+        </div>
+        <div class="box box3">
+            <div>
+                <ul>
+                    <li>
+                        <h4> What type of user are you?</h4>
+                    </li>
+                    <li>Programmer / Developer</li>
+                    <li>Web Developer</li>
+                    <li>Database Manager</li>
+                    <li>System Administrator</li>
+                    <li>Technical Writer</li>
+                    <li>Editor / Publisher</li>
+                    <li>Medical / Pharmaceutical</li>
+                </ul>
+            </div>
+        </div>
+        <div class="box box4">
+            <div>
+                <ul>
+                    <li>
+                        <h4>General</h4>
+                    </li>
+                    <li>Contact</li>
+                    <li>License Agreement (EULA)</li>
+                    <li>End of Life Policy</li>
+                    <li>Libraries and Patents</li>
+                    <li>Information Policy</li>
+                    <li>Privacy Policy</li>
+                    <li>Uninstall Instructions</li>
+                    <li>Sitemap</li>
+                    <li>Legal</li>
+                    <li>Software Security</li>
+                </ul>
+            </div>
+        </div>
+        <div class="box box5">
+            <div>
+                <ul>
+                    <li>
+                        <h4>Subscribe to Newsletter</h4>
+                    </li>
+                    <li>Get the latest news on new</li>
+                    <li> releases, event, and </li>
+                    <li>developments.</li>
+                    <li><input type="text" name="email" placeholder="Enter email address..."></li>
+                    <li>
+                        <h4 class="button">SUBSCRIBE</h4>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <div class="foot">
+        <div>
+            <img src="https://www.ultraedit.com/wp-content/uploads/2023/01/Frame-1-2.png">
+            <div class="copy">©2025 UltraEdit. All rights reserved</div>
+        </div>
+
+        <div class="icons">
+            <i class="fa-brands fa-x-twitter"></i>
+            <i class="fa-brands fa-github"></i>
+            <i class="fa-brands fa-youtube"></i>
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin"></i>
+            <i class="fa-brands fa-reddit"></i>
+        </div>
+    </div>
+
+</body>
+
+</html>
