@@ -17,6 +17,7 @@
 
         body {
             overflow-x: hidden;
+            flex-wrap: wrap;
         }
 
         nav {
@@ -83,8 +84,9 @@
             padding: 12px;
             font-size: 15px;
         }
-        .button:hover{
-            cursor:pointer;
+
+        .button:hover {
+            cursor: pointer;
             background-color: #10aec0;
         }
 
@@ -97,7 +99,7 @@
         .UE {
             height: 66px;
             margin-left: 153px;
-            margin-top:-10px;
+            margin-top: -10px;
         }
 
         .main {
@@ -111,9 +113,11 @@
             margin-top: 100px;
             display: flex;
         }
-#link{
-    text-decoration:none;
-}
+
+        #link {
+            text-decoration: none;
+        }
+
         .box {
             display: flex;
             height: 400px;
@@ -238,7 +242,7 @@
             width: 100vw;
             margin-top: 40px;
             color: white;
-            background-color:#222222;
+            background-color: #222222;
             justify-content: center;
             align-items: center;
         }
@@ -267,56 +271,68 @@
         .d2 div {
             margin-top: 20px;
         }
-        .sub{
-  color: #00b6d1;
-  margin-bottom:15px;
+
+        .sub {
+            color: #00b6d1;
+            margin-bottom: 15px;
         }
-        .d2 div .sign{
-            color:black;
-            font-size:15px;
+
+        .d2 div .sign {
+            color: black;
+            font-size: 15px;
         }
-        .d2 div input{
-            margin:0px 59px;
-            border:1px solid #d9d5d5;
-            width:233px;
-            margin-top:5px;
-            height:26px;
+
+        .d2 div input {
+            margin: 0px 59px;
+            border: 1px solid #d9d5d5;
+            width: 233px;
+            margin-top: 5px;
+            height: 26px;
         }
-        .d2 div button{
+
+        .button3 {
             border-style: none;
-            height:42px;
-            width:254px;
+            height: 42px;
+            width: 254px;
             background-color: #00b6d1;
-            margin-top:20px;
-            color:white;
+            margin-top: 20px;
+            color: white;
             font-weight: bold;
-            font-size:15px;
-            border-radius:5px;
-            margin-left:15px;
+            font-size: 15px;
+            border-radius: 5px;
+            margin-left: 15px;
             box-shadow: 20 20 #00b6d1 blur spread;
             cursor: pointer;
         }
-        .black2{
-            color:white;
-            height:330px;
-            width:100vw;
+        .button3:hover{
+            background-color: #10aec0;
+        } 
+
+        .black2 {
+            color: white;
+            height: 330px;
+            width: 100vw;
             background-color: #222222;
         }
-        .exe{
-            padding-top:40px;
-            margin-left:146px;
-            margin-bottom:20px;
-            font-size:24px;
-        }
-        .build{
-            margin-left:146px;
-            font-size:16px;
-            margin-top:10px;
-        }
-        .down:hover{
-            cursor:pointer;
 
+        .exe {
+            padding-top: 40px;
+            margin-left: 146px;
+            margin-bottom: 20px;
+            font-size: 24px;
         }
+
+        .build {
+            margin-left: 146px;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+
+        .down:hover {
+            cursor: pointer;
+            background-color: #3BAC0E;
+        }
+
     </style>
 </head>
 
@@ -356,53 +372,83 @@
     <div class="middle">
         <div class="item item1">
             <h3 class="lang">English</h3> Includes all languages
-            <a id="link" href="https://downloads.ultraedit.com/main/ue/win/ue_allinone.exe?_gl=1*1f3gdfu*_gcl_au*ODA1NDI3Mzg0LjE3NjEzMjM2MDA.*_ga*MTE3MzI5NjMwNy4xNzYxMzIzNjAw*_ga_QNXHVTPWNS*czE3NjE2NDM4ODQkbzEwJGcxJHQxNzYxNjQ0MDE0JGo1NyRsMCRoMTE2MjM3ODcyMg.."><div class="down">Download 64-bit</div></a>SHA256<div class="garbage">
+            <a id="link"
+                href="https://downloads.ultraedit.com/main/ue/win/ue_allinone.exe?_gl=1*1f3gdfu*_gcl_au*ODA1NDI3Mzg0LjE3NjEzMjM2MDA.*_ga*MTE3MzI5NjMwNy4xNzYxMzIzNjAw*_ga_QNXHVTPWNS*czE3NjE2NDM4ODQkbzEwJGcxJHQxNzYxNjQ0MDE0JGo1NyRsMCRoMTE2MjM3ODcyMg..">
+                <div class="down">Download 64-bit</div>
+            </a>SHA256<div class="garbage">
                 489DJN3J50JFK789DKI9FHIE38478FKK394JIF9NEJE394K29DIRU49920DI393</div>
 
         </div>
         <div class="item item2">
-           <h3 class="lang">Deutsch</h3> German
-             <a id="link" href="https://downloads.ultraedit.com/main/ue/win/ue_german_64.exe?_gl=1*i838hl*_gcl_au*ODA1NDI3Mzg0LjE3NjEzMjM2MDA.*_ga*MTE3MzI5NjMwNy4xNzYxMzIzNjAw*_ga_QNXHVTPWNS*czE3NjE2NDM4ODQkbzEwJGcxJHQxNzYxNjQ0MDE0JGo1NyRsMCRoMTE2MjM3ODcyMg.."><div class="down">Download 64-bit</div></a>SHA256<div class="garbage">
+            <h3 class="lang">Deutsch</h3> German
+            <a id="link"
+                href="https://downloads.ultraedit.com/main/ue/win/ue_german_64.exe?_gl=1*i838hl*_gcl_au*ODA1NDI3Mzg0LjE3NjEzMjM2MDA.*_ga*MTE3MzI5NjMwNy4xNzYxMzIzNjAw*_ga_QNXHVTPWNS*czE3NjE2NDM4ODQkbzEwJGcxJHQxNzYxNjQ0MDE0JGo1NyRsMCRoMTE2MjM3ODcyMg..">
+                <div class="down">Download 64-bit</div>
+            </a>SHA256<div class="garbage">
                 489DJN3J50JFK789DKI9FHIE38478FKK394JIF9NEJE394K29DIRU49920DI393</div>
         </div>
         <div class="item item3">
             <h3 class="lang">Italiano</h3> Italian
-            <a id="link" href="https://downloads.ultraedit.com/main/ue/win/ue_italian_64.exe?_gl=1*y0p9h9*_gcl_au*ODA1NDI3Mzg0LjE3NjEzMjM2MDA.*_ga*MTE3MzI5NjMwNy4xNzYxMzIzNjAw*_ga_QNXHVTPWNS*czE3NjE2NDM4ODQkbzEwJGcxJHQxNzYxNjQ0MDE0JGo1NyRsMCRoMTE2MjM3ODcyMg.."><div class="down">Download 64-bit</div></a>SHA256<div class="garbage">
+            <a id="link"
+                href="https://downloads.ultraedit.com/main/ue/win/ue_italian_64.exe?_gl=1*y0p9h9*_gcl_au*ODA1NDI3Mzg0LjE3NjEzMjM2MDA.*_ga*MTE3MzI5NjMwNy4xNzYxMzIzNjAw*_ga_QNXHVTPWNS*czE3NjE2NDM4ODQkbzEwJGcxJHQxNzYxNjQ0MDE0JGo1NyRsMCRoMTE2MjM3ODcyMg..">
+                <div class="down">Download 64-bit</div>
+            </a>SHA256<div class="garbage">
                 489DJN3J50JFK789DKI9FHIE38478FKK394JIF9NEJE394K29DIRU49920DI393</div>
         </div>
         <div class="item item1">
             <h3 class="lang">Español</h3> Spanish
-            <a id="link" href="https://downloads.ultraedit.com/main/ue/win/ue_spanish_64.exe?_gl=1*1ejplgt*_gcl_au*ODA1NDI3Mzg0LjE3NjEzMjM2MDA.*_ga*MTE3MzI5NjMwNy4xNzYxMzIzNjAw*_ga_QNXHVTPWNS*czE3NjE2NDM4ODQkbzEwJGcxJHQxNzYxNjQ0MDE0JGo1NyRsMCRoMTE2MjM3ODcyMg.."><div class="down">Download 64-bit</div></a>SHA256<div class="garbage">
+            <a id="link"
+                href="https://downloads.ultraedit.com/main/ue/win/ue_spanish_64.exe?_gl=1*1ejplgt*_gcl_au*ODA1NDI3Mzg0LjE3NjEzMjM2MDA.*_ga*MTE3MzI5NjMwNy4xNzYxMzIzNjAw*_ga_QNXHVTPWNS*czE3NjE2NDM4ODQkbzEwJGcxJHQxNzYxNjQ0MDE0JGo1NyRsMCRoMTE2MjM3ODcyMg..">
+                <div class="down">Download 64-bit</div>
+            </a>SHA256<div class="garbage">
                 489DJN3J50JFK789DKI9FHIE38478FKK394JIF9NEJE394K29DIRU49920DI393</div>
         </div>
         <div class="item item5">
             <h3 class="lang">français</h3> French
-            <a id="link" href="https://downloads.ultraedit.com/main/ue/win/ue_french_64.exe?_gl=1*1ejplgt*_gcl_au*ODA1NDI3Mzg0LjE3NjEzMjM2MDA.*_ga*MTE3MzI5NjMwNy4xNzYxMzIzNjAw*_ga_QNXHVTPWNS*czE3NjE2NDM4ODQkbzEwJGcxJHQxNzYxNjQ0MDE0JGo1NyRsMCRoMTE2MjM3ODcyMg.."><div class="down">Download 64-bit</div></a>SHA256<div class="garbage">
+            <a id="link"
+                href="https://downloads.ultraedit.com/main/ue/win/ue_french_64.exe?_gl=1*1ejplgt*_gcl_au*ODA1NDI3Mzg0LjE3NjEzMjM2MDA.*_ga*MTE3MzI5NjMwNy4xNzYxMzIzNjAw*_ga_QNXHVTPWNS*czE3NjE2NDM4ODQkbzEwJGcxJHQxNzYxNjQ0MDE0JGo1NyRsMCRoMTE2MjM3ODcyMg..">
+                <div class="down">Download 64-bit</div>
+            </a>SHA256<div class="garbage">
                 489DJN3J50JFK789DKI9FHIE38478FKK394JIF9NEJE394K29DIRU49920DI393</div>
         </div>
         <div class="item item3">
             <h3 class="lang">Português brasileiro</h3> Brazilian Portuguese
-            <a id="link" href="https://downloads.ultraedit.com/main/ue/win/ue_portuguese_64.exe?_gl=1*1ejplgt*_gcl_au*ODA1NDI3Mzg0LjE3NjEzMjM2MDA.*_ga*MTE3MzI5NjMwNy4xNzYxMzIzNjAw*_ga_QNXHVTPWNS*czE3NjE2NDM4ODQkbzEwJGcxJHQxNzYxNjQ0MDE0JGo1NyRsMCRoMTE2MjM3ODcyMg.."><div class="down">Download 64-bit</div></a>SHA256<div class="garbage">
+            <a id="link"
+                href="https://downloads.ultraedit.com/main/ue/win/ue_portuguese_64.exe?_gl=1*1ejplgt*_gcl_au*ODA1NDI3Mzg0LjE3NjEzMjM2MDA.*_ga*MTE3MzI5NjMwNy4xNzYxMzIzNjAw*_ga_QNXHVTPWNS*czE3NjE2NDM4ODQkbzEwJGcxJHQxNzYxNjQ0MDE0JGo1NyRsMCRoMTE2MjM3ODcyMg..">
+                <div class="down">Download 64-bit</div>
+            </a>SHA256<div class="garbage">
                 489DJN3J50JFK789DKI9FHIE38478FKK394JIF9NEJE394K29DIRU49920DI393</div>
         </div>
         <div class="item item1">
             <h3 class="lang">日本</h3> Japanese
-            <a id="link" href="https://downloads.ultraedit.com/main/ue/win/ue_portuguese_64.exe?_gl=1*1ejplgt*_gcl_au*ODA1NDI3Mzg0LjE3NjEzMjM2MDA.*_ga*MTE3MzI5NjMwNy4xNzYxMzIzNjAw*_ga_QNXHVTPWNS*czE3NjE2NDM4ODQkbzEwJGcxJHQxNzYxNjQ0MDE0JGo1NyRsMCRoMTE2MjM3ODcyMg.."><div class="down">Download 64-bit</div></a>SHA256<div class="garbage">
+            <a id="link"
+                href="https://downloads.ultraedit.com/main/ue/win/ue_portuguese_64.exe?_gl=1*1ejplgt*_gcl_au*ODA1NDI3Mzg0LjE3NjEzMjM2MDA.*_ga*MTE3MzI5NjMwNy4xNzYxMzIzNjAw*_ga_QNXHVTPWNS*czE3NjE2NDM4ODQkbzEwJGcxJHQxNzYxNjQ0MDE0JGo1NyRsMCRoMTE2MjM3ODcyMg..">
+                <div class="down">Download 64-bit</div>
+            </a>SHA256<div class="garbage">
                 489DJN3J50JFK789DKI9FHIE38478FKK394JIF9NEJE394K29DIRU49920DI393</div>
         </div>
         <div class="item item8">
             <h3 class="lang">한국어</h3> Korean
-            <a id="link" href="https://downloads.ultraedit.com/main/ue/win/ue_korean_64.exe?_gl=1*psg35p*_gcl_au*ODA1NDI3Mzg0LjE3NjEzMjM2MDA.*_ga*MTE3MzI5NjMwNy4xNzYxMzIzNjAw*_ga_QNXHVTPWNS*czE3NjE2NDM4ODQkbzEwJGcxJHQxNzYxNjQ0MDE0JGo1NyRsMCRoMTE2MjM3ODcyMg.."><div class="down">Download 64-bit</div></a>SHA256<div class="garbage">
+            <a id="link"
+                href="https://downloads.ultraedit.com/main/ue/win/ue_korean_64.exe?_gl=1*psg35p*_gcl_au*ODA1NDI3Mzg0LjE3NjEzMjM2MDA.*_ga*MTE3MzI5NjMwNy4xNzYxMzIzNjAw*_ga_QNXHVTPWNS*czE3NjE2NDM4ODQkbzEwJGcxJHQxNzYxNjQ0MDE0JGo1NyRsMCRoMTE2MjM3ODcyMg..">
+                <div class="down">Download 64-bit</div>
+            </a>SHA256<div class="garbage">
                 489DJN3J50JFK789DKI9FHIE38478FKK394JIF9NEJE394K29DIRU49920DI393</div>
         </div>
         <div class="item item3">
             <h3 class="lang">华语</h3> Chinese
-            <a id="link" href="https://downloads.ultraedit.com/main/ue/win/ue_chinese_64.exe?_gl=1*psg35p*_gcl_au*ODA1NDI3Mzg0LjE3NjEzMjM2MDA.*_ga*MTE3MzI5NjMwNy4xNzYxMzIzNjAw*_ga_QNXHVTPWNS*czE3NjE2NDM4ODQkbzEwJGcxJHQxNzYxNjQ0MDE0JGo1NyRsMCRoMTE2MjM3ODcyMg.."><div class="down">Download 64-bit</div></a>SHA256<div class="garbage">
+            <a id="link"
+                href="https://downloads.ultraedit.com/main/ue/win/ue_chinese_64.exe?_gl=1*psg35p*_gcl_au*ODA1NDI3Mzg0LjE3NjEzMjM2MDA.*_ga*MTE3MzI5NjMwNy4xNzYxMzIzNjAw*_ga_QNXHVTPWNS*czE3NjE2NDM4ODQkbzEwJGcxJHQxNzYxNjQ0MDE0JGo1NyRsMCRoMTE2MjM3ODcyMg..">
+                <div class="down">Download 64-bit</div>
+            </a>SHA256<div class="garbage">
                 489DJN3J50JFK789DKI9FHIE38478FKK394JIF9NEJE394K29DIRU49920DI393</div>
         </div>
         <div class="item item1">
             <h3 class="lang">華語</h3> Traditional Chinese
-            <a id="link" href="https://downloads.ultraedit.com/main/ue/win/ue_chinese_traditional_64.exe?_gl=1*vqhiyc*_gcl_au*ODA1NDI3Mzg0LjE3NjEzMjM2MDA.*_ga*MTE3MzI5NjMwNy4xNzYxMzIzNjAw*_ga_QNXHVTPWNS*czE3NjE2NDM4ODQkbzEwJGcxJHQxNzYxNjQ1MTAwJGo2MCRsMCRoMTE2MjM3ODcyMg.."><div class="down">Download 64-bit</div></a>SHA256<div class="garbage">
+            <a id="link"
+                href="https://downloads.ultraedit.com/main/ue/win/ue_chinese_traditional_64.exe?_gl=1*vqhiyc*_gcl_au*ODA1NDI3Mzg0LjE3NjEzMjM2MDA.*_ga*MTE3MzI5NjMwNy4xNzYxMzIzNjAw*_ga_QNXHVTPWNS*czE3NjE2NDM4ODQkbzEwJGcxJHQxNzYxNjQ1MTAwJGo2MCRsMCRoMTE2MjM3ODcyMg..">
+                <div class="down">Download 64-bit</div>
+            </a>SHA256<div class="garbage">
                 489DJN3J50JFK789DKI9FHIE38478FKK394JIF9NEJE394K29DIRU49920DI393</div>
         </div>
 
@@ -418,23 +464,26 @@
                 <div class="sub"> Subscribe to our emails</div>
                 <label for="sign" class="sign">Enter email address</label>
                 <input type="sign" placeholder="username@gmail.com" name="sign">
-                <button>SIGN UP</button>
+                <button class="button3">SIGN UP</button>
             </div>
         </div>
         <div>
         </div>
-      
-  </div>
-<div class="black2">
-    <div>
-        <div class="exe">EXE or MSI?</div>
-        <div class="build">The EXE builds of our products are the preferred download for most of our users, running Windows 10 and later.</div>
-        <div class="build">We make MSI builds available for bulk or silent deployments (command line, GPO, SCCM, etc.). <span style="color:#0DC1D5">Get the UltraEdit MSI installer.</span></div>
-        <div class="exe">Free trial period</div>
-        <div class="build">This application comes with a free, fully functional 30 day trial period. After the trial period expires, you must<span style="color:#0DC1D5"> purchase a license to</span></div>
-        <div class="build">continue using it.</div>
+
     </div>
-</div>
+    <div class="black2">
+        <div>
+            <div class="exe">EXE or MSI?</div>
+            <div class="build">The EXE builds of our products are the preferred download for most of our users, running
+                Windows 10 and later.</div>
+            <div class="build">We make MSI builds available for bulk or silent deployments (command line, GPO, SCCM,
+                etc.). <span style="color:#0DC1D5">Get the UltraEdit MSI installer.</span></div>
+            <div class="exe">Free trial period</div>
+            <div class="build">This application comes with a free, fully functional 30 day trial period. After the trial
+                period expires, you must<span style="color:#0DC1D5"> purchase a license to</span></div>
+            <div class="build">continue using it.</div>
+        </div>
+    </div>
 
 
     <footer>
